@@ -7,11 +7,10 @@
       %th Name
       %th League
       %th Select Team
-    %body
-      - @teams.each do |team|
-      %tr
-        %td team.city
-        %td team.name
-        %td team.league
-        %td link_to "Select #{team.name}", team_path
-(team)
+  %tbody
+  -@teams.each do |team|
+    %tr
+      %td= team.city
+      %td= team.name
+      %td= team.league
+      %td= link_to "Select #{team.name}, #{team.city}"
