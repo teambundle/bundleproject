@@ -1,0 +1,12 @@
+%h2 Available Bundles
+
+%table#bundle
+  %thead
+    %tr
+      %th Bundle Name
+      %th Bundle Description
+  %tbody
+  -@bundles.each do|bundle|
+    %tr
+      %td= bundle.name
+      %td= link_to "View Bundle", bundle_path(Bundle)

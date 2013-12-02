@@ -33,6 +33,9 @@ group :test do
 end
 
 gem 'haml'
+
 group :development, :test do
   gem 'ruby-debug19'
 end
+
+gem 'table_print'
