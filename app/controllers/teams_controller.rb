@@ -5,6 +5,7 @@ class TeamsController < ApplicationController
 
   def show
     id = params[:id]
+    @team_id = id
     @bundle = Bundle.all
   end
 end

@@ -1,10 +1,11 @@
-%h2 Description of #{bundle.name}
+%h2 Description of #{@bundle.name}
 
 %ul#Description
   %li
-    @bundle.description
+  Description:
+  = @bundle.description
 
-%h3 Price:
-  %p#price = @bundle.price
-  
-= link_to "Back to Bundle List", bundle_path
+  Price:
+  = @bundle.price
+
+= link_to "Back to Bundle List"

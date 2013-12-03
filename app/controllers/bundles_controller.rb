@@ -4,5 +4,7 @@ class BundlesController < ApplicationController
   end
 
   def show
-    @bundle = Bundle.find(params[:id])
+    id = params[:id]
+    @bundle = Bundle.find_by_id(id)
   end
+end
